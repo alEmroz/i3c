@@ -208,8 +208,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+Shift+Up move workspace to output HDMI-2
-bindsym $mod+Shift+Down move workspace to output eDP-1
+bindsym $mod+Shift+Right move workspace to output HDMI-2
+bindsym $mod+Shift+Left move workspace to output eDP-1
 
 bindsym $mod+b exec ~/toggle-bn.sh
 
@@ -300,8 +300,8 @@ exec_always feh --bg-scale ~/.config/i3/background.jpg
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Activating the second monitor and placing it to the right of the primary one
-# exec_always xrandr --output HDMI-2 --auto --right-of eDP-1
-exec_always xrandr --output HDMI-2 --auto --above eDP-1
+exec_always xrandr --output HDMI-2 --auto --right-of eDP-1
+# exec_always xrandr --output HDMI-2 --auto --above eDP-1
 exec_always xrandr --output HDMI-2 --set "Broadcast RGB" "Full" # for the LGTV
 
 
